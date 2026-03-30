@@ -66,14 +66,14 @@
 
 
   
-    <!-- 定义一个布尔类型的配置项 -->
+    <!-- type="b" boolean 定义一个布尔类型的配置项 -->
     <key name="enable-feature" type="b">
       <default>true</default>
       <summary>启用核心功能</summary>
       <description>控制扩展的主要功能是否开启</description>
     </key>
 
-    <!-- 定义一个字符串类型的配置项 -->
+    <!-- type="s" string 定义一个字符串类型的配置项 -->
     <key name="custom-text" type="s">
       <default>"默认文本"</default>
       <summary>自定义显示文本</summary>
