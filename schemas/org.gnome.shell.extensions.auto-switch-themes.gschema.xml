@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="auto-switch-themes">
-  <schema id="org.gnome.shell.extensions.auto-switch-themes"
-	  path="/org/gnome/shell/extensions/auto-switch-themes/">
+
+  <!-- Add keys for custom themes -->
+  <enum id="org.gnome.shell.extensions.auto-switch-themes.color-scheme-enum">
+    <value nick="default" value="0"/>
+    <value nick="prefer-dark" value="1"/>
+    <value nick="prefer-light" value="2"/>
+  </enum>
+  
+  <!-- 1、Add keys for custom themes -->
+  <!-- org.gnome.shell.extensions.auto-switch-themes -->
+  <schema id="org.gnome.shell.extensions.auto-switch-themes" path="/org/gnome/shell/extensions/auto-switch-themes/">
+    <key name="settings-version" type="i">
+      <default>0</default>
+    </key>
+  </schema>
+  
+  <!-- 2、Add keys for custom themes -->
+  <!-- org.gnome.shell.extensions.auto-switch-themes.cursor -->
+  <schema id="org.gnome.shell.extensions.auto-switch-themes.cursor" path="/org/gnome/shell/extensions/auto-switch-themes/cursor/">
+    <key name="enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="sunrise" type="s">
+      <default>""</default>
+    </key>
+    <key name="sunset" type="s">
+      <default>""</default>
+    </key>
+  </schema>
+  
+  <!-- 3、Add keys for custom themes -->
+  <!-- org.gnome.shell.extensions.auto-switch-themes.icon -->
+  <schema id="org.gnome.shell.extensions.auto-switch-themes.icon" path="/org/gnome/shell/extensions/auto-switch-themes/icon/">
+
+  </schema>
+  
+  <!-- 4、Add keys for custom themes -->
+  <!-- org.gnome.shell.extensions.auto-switch-themes.shell -->
+  <schema id="org.gnome.shell.extensions.auto-switch-themes.shell" path="/org/gnome/shell/extensions/auto-switch-themes/shell/">
+    <key name="day" enum="org.gnome.shell.extensions.nightthemeswitcher.color-scheme-enum">
+      <default>"default"</default>
+    </key>
+    <key name="night" enum="org.gnome.shell.extensions.nightthemeswitcher.color-scheme-enum">
+      <default>"prefer-dark"</default>
+    </key>
+  </schema>
+
+  <!-- 5、Add keys for custom themes -->
+  <!-- org.gnome.shell.extensions.auto-switch-themes.gtk -->
+  <schema id="org.gnome.shell.extensions.auto-switch-themes.gtk" path="/org/gnome/shell/extensions/auto-switch-themes/gtk/">
+    <key name="enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="sunrise" type="s">
+      <default>""</default>
+    </key>
+    <key name="sunset" type="s">
+      <default>""</default>
+    </key>
+  </schema>
+
+
+
+
+
   
     <!-- 定义一个布尔类型的配置项 -->
     <key name="enable-feature" type="b">
@@ -15,7 +78,6 @@
       <default>"默认文本"</default>
       <summary>自定义显示文本</summary>
     </key>
-  
   
     <!-- 1、Add keys for custom themes -->
     <key type="s" name="default">
