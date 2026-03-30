@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="light-dark-cursor-theme-extension">
-    <schema id="org.gnome.shell.extensions.light-dark-cursor-theme"
-            path="/org/gnome/shell/extensions/light-dark-cursor-theme/">
-   
-        <!-- Add keys for custom themes -->
-        <key type="s" name="default">
-            <default>"Fluent-cursors"</default>
-            <summary>Custom cursor theme for light scheme color</summary>
-        </key>
-        <key type="s" name="prefer-dark">
-            <default>"Fluent-dark-cursors"</default>
-            <summary>Custom cursor theme for dark scheme color</summary>
-        </key>
-    </schema>
-</schemalist>
+<schemalist gettext-domain="auto-switch-themes">
+  <schema id="org.gnome.shell.extensions.auto-switch-themes"
+	  path="/org/gnome/shell/extensions/auto-switch-themes/">
+  
+    <!-- 定义一个布尔类型的配置项 -->
+    <key name="enable-feature" type="b">
+      <default>true</default>
+      <summary>启用核心功能</summary>
+      <description>控制扩展的主要功能是否开启</description>
+    </key>
 
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="light-dark-cursor-theme-extension">
-  <schema id="org.gnome.shell.extensions.auto-switch-themes" path="/org/gnome/shell/extensions/auto-switch-themes/">
+    <!-- 定义一个字符串类型的配置项 -->
+    <key name="custom-text" type="s">
+      <default>"默认文本"</default>
+      <summary>自定义显示文本</summary>
+    </key>
+  
   
     <!-- 1、Add keys for custom themes -->
     <key type="s" name="default">
