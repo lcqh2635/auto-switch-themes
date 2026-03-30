@@ -1,0 +1,26 @@
+{
+  "uuid": "auto-switch-themes@lcqh2635.github.com",
+  "name": "Auto Switch Themes",
+  "description": "Automatically switch cursor, icon, user, gtk theme according to the accent color activated by the system",
+  "url": "https://github.com/lcqh2635/auto-switch-themes",
+  "shell-version": [
+      "46",
+      "47",
+      "48",
+      "49",
+      "50"
+  ],
+  
+  "gettext-domain": "auto-switch-themes@lcqh2635.github.com",
+  "settings-schema": "org.gnome.shell.extensions.auto-switch-themes",
+  "session-modes": ["user", "unlock-dialog"],
+  "version": 50,
+  "version-name": "50.0.2 20260329",
+  "original-authors": [
+      "me@aunetx.dev"
+  ],
+  "donations": {
+      "github": "john_doe",
+      "custom": ["https://example.com/1/", "https://example.com/2/"]
+  }
+}
